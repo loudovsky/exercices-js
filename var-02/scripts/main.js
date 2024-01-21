@@ -1,19 +1,26 @@
-let maVariable = 0 ;
+let myVar = 0 ;
+let addButton = document.querySelector('.add-button');
+let subButton = document.querySelector('.sub-button');
 
-let myButton = document.querySelector('.button');
+addButton.addEventListener('click',function() {
+        myVar++;
+        document.getElementsByTagName("p")[0].innerHTML = myVar;
+});
 
-myButton.addEventListener('click',function() {
-    myBody.classList.toggle('active')
-    mySquareButton.classList.toggle('alt-square-button')
-})
+subButton.addEventListener('click',function() {
+    myVar--;
+    document.getElementsByTagName("p")[0].innerHTML = myVar;
+});
 
-function myFunction () {
-    maVariable = maVariable + 1;
-}
+document.getElementsByTagName("p")[0].innerHTML = myVar;
 
+/*var myVar = 0;
+var button = document.querySelector('.button');
+var p = document.querySelector('p');
 
-function myClick () {
-    myButton.addEventListener("click", myFunction)
-};
+button.addEventListener('click', function() {
+  myVar++;
+  p.textContent = myVar;
+});
 
-console.log(maVariable);
+p.textContent = myVar;*/
