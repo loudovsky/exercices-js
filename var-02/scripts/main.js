@@ -1,26 +1,18 @@
 let myVar = 0 ;
+let result = document.querySelector('p');
 let addButton = document.querySelector('.add-button');
 let subButton = document.querySelector('.sub-button');
 
 addButton.addEventListener('click',function() {
         myVar++;
-        document.getElementsByTagName("p")[0].innerHTML = myVar;
+        result.innerHTML = myVar;
 });
 
 subButton.addEventListener('click',function() {
     myVar--;
-    document.getElementsByTagName("p")[0].innerHTML = myVar;
+    result.innerHTML = myVar;
 });
 
-document.getElementsByTagName("p")[0].innerHTML = myVar;
+result.innerHTML = myVar;
 
-/*var myVar = 0;
-var button = document.querySelector('.button');
-var p = document.querySelector('p');
-
-button.addEventListener('click', function() {
-  myVar++;
-  p.textContent = myVar;
-});
-
-p.textContent = myVar;*/
+//document.getElementsByTagName("p")[0].innerHTML = maVariable; est une autre méthode poossible, mais Olivier préfère querySelector qui est plus puissant et moins compliqué à écrire

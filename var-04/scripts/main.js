@@ -3,10 +3,10 @@ let text = "";
 let myButton = document.querySelector('.button');
 
 for (let i = 0; i < myTab.length; i++) {
-        text += "<li>" + myTab[i] + "</li>"
+        text += `<li>${myTab[i]}</li>`
+        // text += "<li>" + myTab[i] + "</li>" => autre manière de l'écrire
+        document.querySelector("ul").innerHTML = text;
 }
-
-document.getElementsByTagName("ul")[0].innerHTML = text;
 
 function numAverage() { 
         let sum = 0;
@@ -20,7 +20,7 @@ function numAverage() {
 
 myButton.addEventListener('click',function () {
         let moyenne = numAverage(myTab);
-        document.getElementsByTagName("p")[0].innerHTML = moyenne;
+        document.querySelector("p").innerHTML = moyenne;
 
 });
 

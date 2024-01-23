@@ -1,0 +1,21 @@
+body {
+    background-color: rebeccapurple;
+}
+.wrapper {
+    width:  1000px;
+    margin: 0 auto;
+    padding:2rem;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    h1 {
+        color: #000;
+    }
+}
+
+h1 {
+    color:#fff;
+    text-align: center;
+}

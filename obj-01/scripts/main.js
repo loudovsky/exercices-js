@@ -11,5 +11,5 @@ let age = utilisateur.age;
 
 let texte = prénom + " " + nom ;
 
-document.getElementsByTagName("h1")[0].innerHTML = texte;
-document.getElementsByTagName("sub")[0].innerHTML = age;
+document.querySelector(".wrapper h1").innerHTML = texte;
+document.querySelector("sub").innerHTML = age;
